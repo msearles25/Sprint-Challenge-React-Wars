@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import StarWarsCard from './components/StarWarsCard';
 import axios from 'axios';
+import {Row} from 'reactstrap';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -26,18 +27,20 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {characterInfo.map((character, index) => {
-        return (
-          <StarWarsCard 
-          key={index} 
-          character={character.name}
-          gender={character.gender}
-          hairColor={character.hairColor}
-          height={character.height}
-          mass={character.mass}
-          />
-        )
-      })}
+        <Row>
+          {characterInfo.map((character, index) => {
+            return (
+              <StarWarsCard 
+              key={index} 
+              character={character.name}
+              gender={character.gender}
+              hairColor={character.hairColor}
+              height={character.height}
+              mass={character.mass}
+              />
+            )
+          })}
+        </Row>
     </div>
   );
 }
