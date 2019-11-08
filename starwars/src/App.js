@@ -33,8 +33,7 @@ const App = () => {
               <StarWarsCard 
               key={index} 
               character={character.name}
-              gender={character.gender}
-              hairColor={character.hairColor}
+              eyeColor={character.eye_color}
               height={character.height}
               mass={character.mass}
               />

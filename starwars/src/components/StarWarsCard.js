@@ -16,8 +16,9 @@ function StarWarsCard(props) {
             <Card>
                 <CardBody>
                     <CardTitle>{props.character}</CardTitle>
-                    <CardText>Height: {props.height}</CardText>
-                    <CardText>Weight: {props.mass}</CardText>
+                    <CardSubtitle>They have {props.eyeColor} eyes</CardSubtitle>
+                    <CardText>Height: {props.height}cm</CardText>
+                    <CardText>Weight: {props.mass}kg</CardText>
                 </CardBody>
             </Card>
         </Col>

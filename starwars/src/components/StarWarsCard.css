@@ -1,3 +1,14 @@
-.CardTitle {
-    font-size: 25px;
+.card {
+    margin: 25px 0;
+    opacity: 0.8;
+}
+.card-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #443e3e;
+    text-shadow: 1px 1px 5px #6d6ea860;
+}
+.card-subtitle {
+    font-size: 20px;
+    font-weight: 600;
 }
