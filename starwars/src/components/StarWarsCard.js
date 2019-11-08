@@ -12,7 +12,7 @@ import './StarWarsCard.css';
 
 function StarWarsCard(props) {
     return (
-        <Col xs="12" s="6" md="4">
+        <Col xs="12" s="12" md='4'>
             <Card>
                 <CardBody>
                     <CardTitle>{props.character}</CardTitle>
